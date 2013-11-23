@@ -13,7 +13,7 @@ function enc($str, $charset = 'UTF-8') {
 
 <?php
 
-	print(enc($_POST['email']);
+//	print(enc($_POST['email']);
 	
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
