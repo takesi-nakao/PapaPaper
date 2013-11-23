@@ -49,6 +49,27 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
         die(var_dump($e));
     }
     }
+	
+    // Retrieve data
+    $sql_select = "SELECT * FROM registration_tbl";
+    $stmt = $conn->query($sql_select);
+    $registrants = $stmt->fetchAll(); 
+    if(count($registrants) > 0) {
+        echo "<h2>People who are registered:</h2>";
+        echo "<table>";
+        echo "<tr><th>Name</th>";
+        echo "<th>Email</th>";
+        echo "<th>Date</th></tr>";
+        foreach($registrants as $registrant) {
+            echo "<tr><td>".$registrant['name']."</td>";
+            echo "<td>".$registrant['email']."</td>";
+            echo "<td>".$registrant['date']."</td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "<h3>No one is currently registered.</h3>";
+    }
+
 ?>
 
 <h1>登録ありがとうございました</h1>
