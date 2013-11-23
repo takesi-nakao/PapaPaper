@@ -1,9 +1,9 @@
 <?php
 //require_once 'encode.php';
-//function e($str, $charset = 'UTF-8') {
-htmlspecialchars($str, ENT_QUOTES, $charset);
-	print('sss');
-//}
+function e($str, $charset = 'UTF-8') {
+	$v = htmlspecialchars($str, ENT_QUOTES, $charset);
+	print($v);
+}
 //session_start();
 ?>
 <!DOCTYPE html>
