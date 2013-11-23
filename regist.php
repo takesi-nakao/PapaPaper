@@ -12,6 +12,9 @@ function enc($str, $charset = 'UTF-8') {
 <body>
 
 <?php
+
+	print(enc($_POST['email']);
+	
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
     //using the values you retrieved earlier from the portal.
@@ -49,32 +52,11 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
         die(var_dump($e));
     }
     }
-/*
-    // Retrieve data
-    $sql_select = "SELECT * FROM registration_tbl";
-    $stmt = $conn->query($sql_select);
-    $registrants = $stmt->fetchAll(); 
-    if(count($registrants) > 0) {
-        echo "<h2>People who are registered:</h2>";
-        echo "<table>";
-        echo "<tr><th>Name</th>";
-        echo "<th>Email</th>";
-        echo "<th>Date</th></tr>";
-        foreach($registrants as $registrant) {
-            echo "<tr><td>".$registrant['name']."</td>";
-            echo "<td>".$registrant['email']."</td>";
-            echo "<td>".$registrant['date']."</td></tr>";
-        }
-        echo "</table>";
-    } else {
-        echo "<h3>No one is currently registered.</h3>";
-    }
-*/
 ?>
 
 <h1>登録ありがとうございました</h1>
-<p><?php print($_POST['name']); ?></p>
-<p><?php print($_POST['email']); ?></p>
+<p><?php print('お名前：'.$_POST['name']); ?></p>
+<p><?php print('メールアドレス：'.$_POST['email']); ?></p>
 
 </body>
 </html>
