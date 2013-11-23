@@ -31,33 +31,12 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     catch(Exception $e){
         die(var_dump($e));
     }
-/*
-    // Insert registration info
-    if(!empty($_POST)) {
-    try {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $date = date("Y-m-d");
-        // Insert data
-        $sql_insert = "INSERT INTO registration_tbl (name, email, date) 
-                   VALUES (?,?,?)";
-        $stmt = $conn->prepare($sql_insert);
-        $stmt->bindValue(1, $name);
-        $stmt->bindValue(2, $email);
-        $stmt->bindValue(3, $date);
-        $stmt->execute();
-    }
-    catch(Exception $e) {
-        die(var_dump($e));
-    }
-    }
-*/
-    // Retrieve data
+
+	// Retrieve data
     $sql_select = "SELECT * FROM registration_tbl";
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
-        echo "<h2>People who are registered:</h2>";
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
