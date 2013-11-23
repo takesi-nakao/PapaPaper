@@ -8,8 +8,14 @@ function enc($str, $charset = 'UTF-8') {
 <head>
 <meta charset="UTF-8"/>
 <title>PapaPaper - Registration Result</title>
+<script laguage="JavaScript"><!--
+function changeImg()
+{
+　　　　location.reload();
+}
+// --></script>
 </head>
-<body>
+<body onLoad="setInterval('changeImg()',1000*60)">
 
 <h1>登録状況</h1>
 <?php
