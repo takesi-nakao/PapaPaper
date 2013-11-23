@@ -1,7 +1,3 @@
-<?php
-require_once 'encode.php';
-sesssion_start();
-?>
 <html>
 <head>
 <meta charset="UTF-8"/>
