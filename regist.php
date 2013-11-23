@@ -33,25 +33,40 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     catch(Exception $e){
         die(var_dump($e));
     }
-    // Insert registration info
-    if(!empty($_POST)) {
-    try {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $date = date("Y-m-d");
-        // Insert data
-        $sql_insert = "INSERT INTO registration_tbl (name, email, date) 
-                   VALUES (?,?,?)";
-        $stmt = $conn->prepare($sql_insert);
-        $stmt->bindValue(1, $name);
-        $stmt->bindValue(2, $email);
-        $stmt->bindValue(3, $date);
-        $stmt->execute();
-    }
-    catch(Exception $e) {
-        die(var_dump($e));
-    }
-    }
+	
+	// 重複チェック
+	print("SELECT * FROM registration_tbl WHERE email = {$_POST['email']}");
+	die('');
+	
+    $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
+    $stmt = $conn->query($sql_select);
+    $registrants = $stmt->fetchAll(); 
+    if(!count($registrants)) {
+		// Insert registration info
+		if(!empty($_POST)) {
+		try {
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$date = date("Y-m-d");
+			// Insert data
+			$sql_insert = "INSERT INTO registration_tbl (name, email, date) 
+					   VALUES (?,?,?)";
+			$stmt = $conn->prepare($sql_insert);
+			$stmt->bindValue(1, $name);
+			$stmt->bindValue(2, $email);
+			$stmt->bindValue(3, $date);
+			$stmt->execute();
+		}
+		catch(Exception $e) {
+			die(var_dump($e));
+		}
+		else {
+			die('登録データが入力されていません');
+		}
+	}
+	else {
+		die("すでに登録済みのメールアドレスです<br/>メールアドレス：{$_POST['email']}")
+	}
 ?>
 
 <h1>登録ありがとうございました</h1>
