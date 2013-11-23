@@ -9,11 +9,11 @@
 <form method="post" action="regist.php" enctype="multipart/form-data" >
 <div class="container">
 	<label for="name">お名前：</label><br/>
-	<input type="text" name="name" id="name" value="お名前"/>
+	<input type="text" name="name" id="name" value=""/>
 </div>
 <div class="container">
 	<label for="email"メールアドレス：</label><br/>
-	<input type="email" name="email" id="email"/ value="xxx@xxx.jp"/>
+	<input type="email" name="email" id="email"/ value=""/>
 </div>
 <input type="submit" name="submit" value="登録" />
 </form>
