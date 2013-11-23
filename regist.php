@@ -10,11 +10,10 @@
 </head>
 <body>
 <div id="wrap_all">
-    <head>
+    <header>
         <div id="logo_head"><img src="images/logo_head.png" width="509" height="259" alt="パパペパ"></div>
-        <div id="form_head">
-            <p id="orei">ご登録ありがとうございました！</div>
-    </head>
+        <p id="orei">ご登録ありがとうございました！</p>
+    </header>
 </div>
 
 <?php
