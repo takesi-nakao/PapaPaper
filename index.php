@@ -4,7 +4,7 @@
 htmlspecialchars($str, ENT_QUOTES, $charset);
 	print('sss');
 //}
-sesssion_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
