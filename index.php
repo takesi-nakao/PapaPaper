@@ -1,7 +1,8 @@
 <?php
 //require_once 'encode.php';
 function e($str, $charset = 'UTF-8') {
-	print(htmlspecialchars($str, ENT_QUOTES, $charset));
+//htmlspecialchars($str, ENT_QUOTES, $charset)
+	print('sss');
 }
 sesssion_start();
 ?>
