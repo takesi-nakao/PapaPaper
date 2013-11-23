@@ -12,7 +12,7 @@ function enc($str, $charset = 'UTF-8') {
 <body>
 <h1>登録ありがとうございました</h1>
 <p><?php print($_POST['name']); ?></p>
-<p><?php print($*POST['email']); ?></p>
+<p><?php print($_POST['email']); ?></p>
 
 </body>
 </html>
