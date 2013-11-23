@@ -39,7 +39,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     }
 
 	// Retrieve data
-    $sql_select = "SELECT * FROM registration_tbl";
+    $sql_select = "SELECT distinct * FROM registration_tbl";
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
