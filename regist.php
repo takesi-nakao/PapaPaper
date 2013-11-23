@@ -36,6 +36,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 	
 	// 重複チェック
     $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
+	print($sql_select);
 	$stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) === 0) {
