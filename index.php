@@ -15,7 +15,7 @@
 		<form  method="post" action="regist.php" enctype="multipart/form-data" >
         <div id="form_head">
 			<p id="name"> </p>
-			<p id="mail">メール<input id="text_mail_head" type="text" name="email" maxlength="30"></p>
+			<p id="mail">メール<input id="text_mail_head" type="text" name="email" maxlength="64"></p>
             <input id="submit_head" type="image" src="images/btn.png" alt="登録" >
         </div>
 		</form>
