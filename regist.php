@@ -36,6 +36,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 	
 	// 重複チェック
 	print("SELECT * FROM registration_tbl WHERE email = {$_POST['email']}");
+/*
 	die('');
 	
     $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
@@ -67,6 +68,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 	else {
 		die("すでに登録済みのメールアドレスです<br/>メールアドレス：{$_POST['email']}")
 	}
+*/
 ?>
 
 <h1>登録ありがとうございました</h1>
