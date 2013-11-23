@@ -13,6 +13,7 @@
 /*
 Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e87;Password=fa4ba3e9
 */
+/*
     $host = "ap-cdbr-azure-east-b.cloudapp.net";
     $user = "b623d2a9e26e87";
     $pwd = "fa4ba3e9";
@@ -44,6 +45,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 		catch(Exception $e) {
 			die(var_dump($e));
 		}
+*/
 ?>
 
 <h1>登録ありがとうございました</h1>
