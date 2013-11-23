@@ -58,9 +58,10 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 
 ?>
 
-
+<!--
 <p><?php print('お名前：'.$_POST['name']); ?></p>
 <p><?php print('メールアドレス：'.$_POST['email']); ?></p>
+-->
 
 </body>
 </html>
