@@ -10,7 +10,7 @@ function enc($str, $charset = 'UTF-8') {
 <title>PapaPaper - Registration Result</title>
 </head>
 <body>
-
+<h1>ここまできている？</h1>
 <?php
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
