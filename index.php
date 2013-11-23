@@ -1,5 +1,5 @@
 <?php
-require_once 'encode.php';
+//require_once 'encode.php';
 sesssion_start();
 ?>
 
@@ -14,11 +14,11 @@ sesssion_start();
 <form method="post" action="regist.php" enctype="multipart/form-data" >
 <div class="container">
 	<label for="name">お名前：</label><br/>
-	<input type="text" name="name" id="name" value="<?php print(e($_SESSION['name'])); ?>"/>
+	<input type="text" name="name" id="name" value=""/>
 </div>
 <div class="container">
 	<label for="email">メールアドレス：</label><br/>
-	<input type="email" name="email" id="email"/ value="<?php print(e($_SESSION['email'])); ?>"/>
+	<input type="email" name="email" id="email"/ value=""/>
 </div>
 <input type="submit" name="submit" value="登録" />
 </form>
