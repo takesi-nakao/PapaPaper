@@ -1,9 +1,7 @@
 <?php
-//require_once 'encode.php';
 function e($str, $charset = 'UTF-8') {
 	print(htmlspecialchars($str, ENT_QUOTES, $charset));
 }
-//session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +16,6 @@ function e($str, $charset = 'UTF-8') {
 <div class="container">
 	<label for="name">お名前：</label><br/>
 	<input type="text" name="name" id="name" value=""/>
-	<input type="text" name="name" id="name" value="<?php print(e($_SESSION['name'])); ?>"/>
 </div>
 <div class="container">
 	<label for="email">メールアドレス：</label><br/>
@@ -26,5 +23,8 @@ function e($str, $charset = 'UTF-8') {
 </div>
 <input type="submit" name="submit" value="登録" />
 </form>
+
+
+
 </body>
 </html>
