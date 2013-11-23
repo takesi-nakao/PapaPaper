@@ -43,7 +43,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
-		echo "<h1>今の登録件数：".count($registrants)."人</h1>";
+		echo "<h1>今の登録人数：".count($registrants)."人</h1>";
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
