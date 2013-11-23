@@ -1,22 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8"/>
-<title>PapaPaper - Registration Form</title>
+<meta charset="utf-8">
+<title>パパペパ！　パパのためのイクメン情報サイト</title>
+<link rel="stylesheet" type="text/css" href="css/cssreset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/cssfonts.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 </head>
 <body>
-<h1>PapaPaper ユーザ登録</h1>
-<p>お名前とメールアドレスを入力して、<strong>登録ボタン</strong>を押してください</p>
-<form method="post" action="regist.php" enctype="multipart/form-data" >
-<div class="container">
-	<label for="name">お名前：</label><br/>
-	<input type="text" name="name" id="name" value=""/>
+<div id="wrap_all">
+    <head>
+        <div id="logo_head"><img src="images/logo_head.png" width="509" height="259" alt="パパペパ"></div>
+		<form  method="post" action="regist.php" enctype="multipart/form-data" >
+        <div id="form_head">
+            <p id="name">お名前<input id="text_name_head" type="text" name="name" maxlength="30"></p>            
+			<p id="mail">メール<input id="text_mail_head" type="text" name="email" maxlength="30"></p>
+            <input id="submit_head" type="image" src="images/btn.png" alt="登録" >
+        </div>
+		</form>
+    </head>
 </div>
-<div class="container">
-	<label for="email">メールアドレス：</label><br/>
-	<input type="email" name="email" id="email" value=""/>
-</div>
-<input type="submit" name="submit" value="登録" />
-</form>
 </body>
 </html>
