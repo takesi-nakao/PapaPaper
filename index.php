@@ -14,7 +14,7 @@
         <div id="logo_head"><img src="images/logo_head.png" width="509" height="259" alt="パパペパ"></div>
 		<form  method="post" action="regist.php" enctype="multipart/form-data" >
         <div id="form_head">
-            <p id="name">お名前<input id="text_name_head" type="text" name="name" maxlength="30"></p>            
+			<p id="name"> </p>
 			<p id="mail">メール<input id="text_mail_head" type="text" name="email" maxlength="30"></p>
             <input id="submit_head" type="image" src="images/btn.png" alt="登録" >
         </div>
