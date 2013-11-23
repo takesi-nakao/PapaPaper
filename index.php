@@ -1,3 +1,7 @@
+<?php
+//require_once 'encode.php';
+sesssion_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
