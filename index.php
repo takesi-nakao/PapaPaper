@@ -1,3 +1,7 @@
+<?php
+require_once 'encode.php';
+sesssion_start();ß
+?>
 <html>
 <head>
 <meta charset="UTF-8"/>
@@ -9,11 +13,11 @@
 <form method="post" action="regist.php" enctype="multipart/form-data" >
 <div class="container">
 	<label for="name">お名前：</label><br/>
-	<input type="text" name="name" id="name" value=""/>
+	<input type="text" name="name" id="name" value="<?php print(e($_SESSION['name'])); ?>"/>
 </div>
 <div class="container">
-	<label for="email"メールアドレス：</label><br/>
-	<input type="email" name="email" id="email"/ value=""/>
+	<label for="email">メールアドレス：</label><br/>
+	<input type="email" name="email" id="email"/ value="<?php print(e($_SESSION['email'])); ?>"/>
 </div>
 <input type="submit" name="submit" value="登録" />
 </form>
