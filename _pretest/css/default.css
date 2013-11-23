@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * 01. Overwrite Style Setting
+ * 02. Layout Style Setting
+ * 03. #header Style Setting
+ * 04. #footer Style Setting
+ * 05. #pageTop Style Setting
+ * 06. Share Style Setting
+ */
+
+/*
+ * Overwrite
+ */
+
+body {
+	background-color:#eaedf7;
+}
+
+a {
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	display: none;
+}
+
+
+/*
+ * Layout
+ */
+
+#wrapper1 {
+	width: 1160px;
+	height: 100%;
+	background:url(../dw023_data/images/common_images/bgBody.gif) repeat-y left top;
+	margin:0 auto;
+	
+}
+
+#wrapper2 {
+	width:960px;
+	height:100%;
+	margin:0 auto;
+	padding-top:25px;
+	position:relative;
+}
+
+#flag {
+	position:absolute;
+	top:3px;
+	width:600px;
+	height:15px;
+	left:164px;
+	
+	}
+
+
+#header {
+	width:960px;
+	height:100px;
+	
+	}
+
+#headerTop {
+	width:960px;
+	height:100px;
+	position:relative;
+
+}
+
+
+#headerBottom {
+	width:960px;
+	clear:both;
+	
+}
+
+
+#containerBottom {
+}
+
+#containerBottom #footer {
+}
+
+
+/*
+ * #header Style Setting
+ */
+
+#headerTop h1{
+	position:absolute;
+	width:185px;
+	height:87px;
+
+}
+
+#headerTop #subTitle{
+	position:absolute;
+	width:500px;
+	height:0px;
+	left: 220px;
+	top: 53px;
+}
+
+#headerTop #contact{
+	position:absolute;
+	width:191px;
+	height:57px;
+	top:8px;
+	right:20px;
+	
+	}
+
+#headerBottom #navWrap{
+	margin:0 0 -15px 250px;
+}
+
+#headerBottom #navWrap ul li{
+	float:left;
+ }
+
+/*
+ * #footer Style Setting
+ */
+
+#footer{
+	position:relative;}
+
+
+/*
+ * #pageTop Style Setting
+ */
+
+
+
+/*
+ * Share Style Setting
+ */
