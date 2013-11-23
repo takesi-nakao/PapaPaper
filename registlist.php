@@ -17,7 +17,7 @@ function changeImg()
 </head>
 <body onLoad="setInterval('changeImg()',1000*60)">
 
-<h1>登録状況<?php print('  更新：'.date("Y-m-d H:m:s"));?></h1>
+<h1>登録状況<?php print('  更新：'.date("Y-m-d H:i:s"));?></h1>
 <?php
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
