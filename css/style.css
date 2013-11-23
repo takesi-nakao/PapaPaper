@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:100%;
+	height:660px;
+}
+
+#wrap_all{
+	width:100%;
+	background:
+	url(../images/papa_02.jpg) no-repeat 0 0 #39F;
+	-moz-background-size:cover;
+	background-size:cover;
+	min-height:660px;
+	}
+#logo_head{
+	margin:0 auto; 
+	padding:140px 0 20px 0;
+	width:509px;
+	}	
+#form_head{
+	margin:0 auto;
+	width:505px;
+	position:relative;
+}
+#name{
+	color:#FFF;
+	font-size:1.5em;
+	font-weight:700;
+	position:absolute;
+	left:8px;
+	}
+#text_name_head{
+	width:420px;
+	height:29px;
+	position:absolute;
+	left:76px;
+	top:-5px;
+	}
+#mail{
+	color:#FFF;
+	font-size:1.5em;
+	font-weight:700;
+	position:absolute;
+	top:45px;	
+	left:8px;
+	}
+
+#text_mail_head{
+	width:420px;
+	height:29px;
+	position:absolute;
+	left:76px;
+	top:-5px;
+	}
+
+#submit_head{
+	position:absolute;
+	top:85px;
+	left:10px;
+	}
+
+#form_foot{
+	margin:0 auto;
+	width:500px;
+	}
