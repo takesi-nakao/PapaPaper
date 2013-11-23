@@ -38,7 +38,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
 	$stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
-    if(!count($registrants)) {
+    if(count($registrants) === 0) {
 /*
 		// Insert registration info
 		if(!empty($_POST)) {
@@ -64,7 +64,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 //		}
 	}
 	else {
-		exit("すでに登録済みのメールアドレスです<br/>メールアドレス：{$_POST['email']}")
+		exit("すでに登録済みのメールアドレスです<br/>メールアドレス：{$_POST['email']}");
 	}
 ?>
 
