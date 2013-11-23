@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8"/>
@@ -13,7 +14,7 @@
 </div>
 <div class="container">
 	<label for="email">メールアドレス：</label><br/>
-	<input type="email" name="email" id="email"/ value=""/>
+	<input type="email" name="email" id="email" value=""/>
 </div>
 <input type="submit" name="submit" value="登録" />
 </form>
