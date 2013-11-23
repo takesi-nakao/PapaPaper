@@ -1,8 +1,3 @@
-<?php
-function enc($str, $charset = 'UTF-8') {
-	print(htmlspecialchars($str, ENT_QUOTES, $charset));
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +7,6 @@ function enc($str, $charset = 'UTF-8') {
 <body>
 
 <?php
-
-//	print(enc($_POST['email']);
-	
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
     //using the values you retrieved earlier from the portal.
@@ -34,13 +26,6 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
         die(var_dump($e));
     }
 
-/*
-	// 重複チェック
-    $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
-    $stmt = $conn->query($sql_select);
-    $registrants = $stmt->fetchAll(); 
-    if(!count($registrants)) {
-*/
 		// Insert registration info
 		if(!empty($_POST)) {
 		try {
@@ -59,15 +44,6 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 		catch(Exception $e) {
 			die(var_dump($e));
 		}
-/*
-		else {
-			die('登録データが入力されていません');
-		}
-	}
-	else {
-		die('すでに登録済みです');
-	}
-*/
 ?>
 
 <h1>登録ありがとうございました</h1>
