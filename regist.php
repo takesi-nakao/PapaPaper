@@ -49,7 +49,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
         die(var_dump($e));
     }
     }
-	
+/*
     // Retrieve data
     $sql_select = "SELECT * FROM registration_tbl";
     $stmt = $conn->query($sql_select);
@@ -69,7 +69,7 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     } else {
         echo "<h3>No one is currently registered.</h3>";
     }
-
+*/
 ?>
 
 <h1>登録ありがとうございました</h1>
