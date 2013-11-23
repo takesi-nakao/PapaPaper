@@ -1,6 +1,6 @@
 <?php
-require_once 'encode.php';
-// sesssion_start();
+require_once './encode.php';
+sesssion_start();
 ?>
 
 <html>
