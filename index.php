@@ -1,5 +1,5 @@
 <?php
-require_once './encode.php';
+require_once 'encode.php';
 sesssion_start();
 ?>
 
