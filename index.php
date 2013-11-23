@@ -14,7 +14,8 @@
         <div id="logo_head"><img src="images/logo_head.png" width="509" height="259" alt="パパペパ"></div>
 		<form  method="post" action="regist.php" enctype="multipart/form-data" >
         <div id="form_head">
-			<p id="name">システム稼働の準備中のため事前登録の状態のため、登録確認メールは送信されません。</p>
+			<p id="name" style="font-size:1.5em">システム稼働の準備中のため事前登録の状態のため、登録確認メールは送信されません。</p>
+			<p> </p>
 			<p id="mail">メール<input id="text_mail_head" type="text" name="email" maxlength="64"></p>
             <input id="submit_head" type="image" src="images/btn.png" alt="登録" >
         </div>
