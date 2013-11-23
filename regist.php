@@ -33,14 +33,14 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
     catch(Exception $e){
         die(var_dump($e));
     }
-	
+
+/*
 	// 重複チェック
     $sql_select = "SELECT * FROM registration_tbl WHERE email = {$_POST['email']}";
-	print($sql_select);
-	$stmt = $conn->query($sql_select);
+    $stmt = $conn->query($sql_select);
     $registrants = $stmt->fetchAll(); 
-    if(count($registrants) === 0) {
-/*
+    if(!count($registrants)) {
+*/
 		// Insert registration info
 		if(!empty($_POST)) {
 		try {
@@ -59,14 +59,15 @@ Database=pppp;Data Source=ap-cdbr-azure-east-b.cloudapp.net;User Id=b623d2a9e26e
 		catch(Exception $e) {
 			die(var_dump($e));
 		}
+/*
 		else {
-*/
-			exit('登録データが入力されていません');
-//		}
+			die('登録データが入力されていません');
+		}
 	}
 	else {
-		exit("すでに登録済みのメールアドレスです<br/>メールアドレス：{$_POST['email']}");
+		die('すでに登録済みです');
 	}
+*/
 ?>
 
 <h1>登録ありがとうございました</h1>
