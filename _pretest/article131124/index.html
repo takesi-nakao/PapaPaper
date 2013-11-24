@@ -13,7 +13,9 @@ article = "00";
 
 function articleClick(aLink) {
    // alert('id='+aLink.id);
+   article = aLink.id;
    alert(article);
+   
 }
 </script>
 
@@ -28,7 +30,7 @@ function articleClick(aLink) {
                 <dt></dt>  
                 <dd>
                 <form name="searchform3" id="searchform3" method="get" action="#">  
-                <input name="keywords3" id="keywords3" value="" type="text" />  
+                <input name="keywords3" id="keywords3" value="" type="text" />
                 <input type="image" src="images/btn3.gif" alt="検索" name="searchBtn3" id="searchBtn3" onclick="articleClick(this)"/>  
                 </form>
                 </dd>  
